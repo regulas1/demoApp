@@ -78,13 +78,13 @@ is adding to the file if using ide's with suggestions.
 I have configured the cypress commands to save the common functions and have used them as a class. 
 
 ## Inclusion criteria
--Testing for pages and workflows 
--Testing for the broken links
--Setting up the reporting 
+- Testing for pages and workflows 
+- Testing for the broken links
+- Setting up the reporting 
 
 ## Exclusion criteria
--Testing for Performance
--Testing for multiple browsers
--Testing parrelisation
--Setting up CICD pipelines
--Dockerizing the test environment
+- Testing for Performance
+- Testing for multiple browsers
+- Testing parrelisation
+- Setting up CICD pipelines
+- Dockerizing the test environment
