@@ -2,13 +2,18 @@
 
 This project is a test suite for demo app using [Cypress](https://www.cypress.io/).
 
-##TLDR
-Structure : POM Structure where the pages are located in the folder cypress\e2e\page, the objects are located as Cypress commands (cypress\support\commands.js)
+## TLDR
+### Structure
+ POM Structure where the pages are located in the folder cypress\e2e\page, the objects are located as Cypress commands (cypress\support\commands.js)
 Run npm install
-Running the tests - UI Live runner ( npx cypress open -> E2E testing -> Chrome -> Specs -> Select any )
+
+### Running the tests 
+Run npm install
+- UI Live runner ( npx cypress open -> E2E testing -> Chrome -> Specs -> Select any )
                   - headless runner ( npx cypress run) -> runs all the tests 
                   - headless runner single file npx cypress run/e2e/resources_getInvolved.cy.js"
-Report is located under the reports folder cypress\reports
+                
+### Report is located under the reports folder cypress\reports
 
 ## Table of Contents
 
@@ -35,7 +40,7 @@ What things you need to install the software and how to install them:
 
 A step by step series of examples that tell you how to get a development env running:
 
-1. Clone the repository: `git clone https://github.com/your-username/your-repo.git`
+1. Clone the repository: `git clone https://github.com/regulas1/demoApp.git`
 2. Install dependencies: `npm install`
 
 ### Usage
