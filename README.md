@@ -56,26 +56,26 @@ Explain how to use the project:
 To run all tests headlessly, use the following command:
 npx cypress run 
 
-Reporting: 
+### Reporting: 
 For reporting just run the command npx cypress run  and a report should be generated 
 under reports folder -  cypress\reports
 
-Possible issues: 
+### Possible issues: 
 Running the link checker script loops through the links and checks if they are valid 
 however this takes time to test, so commenting out the     cy.brokenLinkChecker(); will 
 increase speed exponentially to run the test.
 
-Decision process
-Proxy POM model using the Cypress commands and the const in javascript (proxy for enums)
+### Decision process
+POM model using the Cypress commands and the const in javascript (proxy for enums)
 Personally I prefer the use of page object based on model for its maintainability, 
 however JavaScript's const function can be used as a proxy for enums. 
 
-eNums or Consts  - cypress\enums.js
+###  eNums or Consts  - cypress\enums.js
 Hence, I have placed the constants in the file named as enums.js this has all the relevant 
 pages links and position attributes relative to the website.
 This would mean that any time the option is selected the user gets suggestions as to what the user
 is adding to the file if using ide's with suggestions.
 
-Cypress commands as a proxy for Objects - cypress\support\commands.js
+###  Cypress commands as a proxy for Objects - cypress\support\commands.js
 I have configured the cypress commands to save the common functions and have used them as a class. 
 
