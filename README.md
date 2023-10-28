@@ -22,8 +22,6 @@ Run npm install
 - [Installation](#installation)
 - [Usage](#usage)
 - [Running Tests](#running-tests)
-- [Contributing](#contributing)
-- [License](#license)
 
 ## Getting Started
 
@@ -49,7 +47,7 @@ Explain how to use the project:
 
 1. Start the Cypress Test Runner: `npx cypress open`
 2. Select the test file you want to run
-3. The Cypress Test Runner will open and run the tests
+3. The Cypress Test Runner will open and follow the workflow to run the tests 
 
 ## Running Tests
 
@@ -79,3 +77,14 @@ is adding to the file if using ide's with suggestions.
 ###  Cypress commands as a proxy for Objects - cypress\support\commands.js
 I have configured the cypress commands to save the common functions and have used them as a class. 
 
+## Inclusion criteria
+Testing for pages and workflows 
+Testing for the broken links
+Setting up the reporting 
+
+## Exclusion criteria
+Testing for Performance
+Testing for multiple browsers
+Testing parrelisation
+Setting up CICD pipelines
+Dockerizing the test environment
