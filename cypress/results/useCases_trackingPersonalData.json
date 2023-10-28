@@ -1,0 +1,127 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 2,
+    "pending": 0,
+    "failures": 0,
+    "start": "2023-10-28T09:17:39.619Z",
+    "end": "2023-10-28T09:17:43.219Z",
+    "duration": 3600,
+    "testsRegistered": 2,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "3ac47526-69bd-4fed-8685-ed6642278595",
+      "title": "",
+      "fullFile": "cypress\\e2e\\page\\useCases_trackingPersonalData.cy.js",
+      "file": "cypress\\e2e\\page\\useCases_trackingPersonalData.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "e0c9c765-193a-4441-b15b-355aafac7892",
+          "title": "smoke testing the Tracking Personal Data Page",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "user selects the open source options from tracking personal data",
+              "fullTitle": "smoke testing the Tracking Personal Data Page user selects the open source options from tracking personal data",
+              "timedOut": null,
+              "duration": 2381,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visitMatomo();\ncy.selectHomePageLinks(_enums.default.USE_CASES.POSITION, _enums.default.USE_CASES.NAME);\ncy.triggerMouseOver(_enums.default.USE_CASES.POSITION);\ncy.clickSubItems(_enums.default.USE_CASES.TRACKING_PERSONAL_DATA.POSITION);\ncy.get('h2').should('contain', 'Peace of mind for even the most data sensitive industries');",
+              "err": {},
+              "uuid": "9884de19-bb6c-4b3c-afa4-38942cfcb039",
+              "parentUUID": "e0c9c765-193a-4441-b15b-355aafac7892",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "checks the page for any broken links",
+              "fullTitle": "smoke testing the Tracking Personal Data Page checks the page for any broken links",
+              "timedOut": null,
+              "duration": 24,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "// cy.visitMatomo();\n// cy.selectHomePageLinks(pages.USE_CASES.POSITION, pages.USE_CASES.NAME);\n// cy.triggerMouseOver(pages.USE_CASES.POSITION);\n// cy.clickSubItems(pages.USE_CASES.TRACKING_PERSONAL_DATA.POSITION);\n// cy.get('h2').should('contain', 'Peace of mind for even the most data sensitive industries');\n// cy.brokenLinkChecker();",
+              "err": {},
+              "uuid": "1c8738f9-2be8-4d5a-807a-e119055ffcce",
+              "parentUUID": "e0c9c765-193a-4441-b15b-355aafac7892",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "9884de19-bb6c-4b3c-afa4-38942cfcb039",
+            "1c8738f9-2be8-4d5a-807a-e119055ffcce"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 2405,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "[name].html",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "useInlineDiffs": true,
+        "embeddedScreenshots": true,
+        "reportDir": "cypress/results",
+        "reportFilename": "[name].html",
+        "overwrite": true,
+        "html": true,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

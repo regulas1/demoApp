@@ -1,0 +1,127 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 2,
+    "pending": 0,
+    "failures": 0,
+    "start": "2023-10-28T09:17:30.052Z",
+    "end": "2023-10-28T09:17:38.413Z",
+    "duration": 8361,
+    "testsRegistered": 2,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "9b632cd0-70ff-41ec-bf28-d1ff3bb350d2",
+      "title": "",
+      "fullFile": "cypress\\e2e\\page\\resources_getInvolved.cy.js",
+      "file": "cypress\\e2e\\page\\resources_getInvolved.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "b7fb0558-5449-4911-a310-54b16baa74e0",
+          "title": "smoke testing the get involved page",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "user selects the open source options from get involved page",
+              "fullTitle": "smoke testing the get involved page user selects the open source options from get involved page",
+              "timedOut": null,
+              "duration": 6324,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visitMatomo();\ncy.selectHomePageLinks(_enums.default.RESOURCES.POSITION, _enums.default.RESOURCES.NAME);\ncy.triggerMouseOver(_enums.default.RESOURCES.POSITION);\ncy.clickSubItems(_enums.default.RESOURCES.GET_INVOLVED.POSITION);\ncy.get('h1').should('contain', 'The Matomo community');",
+              "err": {},
+              "uuid": "ac548656-5747-4fce-acfc-b11c2a9e7070",
+              "parentUUID": "b7fb0558-5449-4911-a310-54b16baa74e0",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "checks the page for any broken links",
+              "fullTitle": "smoke testing the get involved page checks the page for any broken links",
+              "timedOut": null,
+              "duration": 30,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "// cy.visitMatomo();\n// cy.selectHomePageLinks(pages.RESOURCES.POSITION, pages.RESOURCES.NAME);\n// cy.triggerMouseOver(pages.RESOURCES.POSITION);\n// cy.clickSubItems(pages.RESOURCES.GET_INVOLVED.POSITION);\n// cy.get('h1').should('contain', 'The Matomo community');\n// cy.brokenLinkChecker();",
+              "err": {},
+              "uuid": "0f84feab-9561-4af7-8c5f-cd5cb9201bb5",
+              "parentUUID": "b7fb0558-5449-4911-a310-54b16baa74e0",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "ac548656-5747-4fce-acfc-b11c2a9e7070",
+            "0f84feab-9561-4af7-8c5f-cd5cb9201bb5"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 6354,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "[name].html",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "useInlineDiffs": true,
+        "embeddedScreenshots": true,
+        "reportDir": "cypress/results",
+        "reportFilename": "[name].html",
+        "overwrite": true,
+        "html": true,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}
